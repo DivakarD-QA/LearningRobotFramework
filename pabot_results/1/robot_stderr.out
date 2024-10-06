@@ -1,0 +1,4 @@
+[ ERROR ] Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 5: Resource file '..\tests\Lab005_CSV.robot' does not exist.
+[ ERROR ] Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 6: Resource file '..\tests\Lab002_FOR.robot' does not exist.
+[ ERROR ] Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 7: Resource file '..\tests\Lab003_Window_Split.robot' does not exist.
+[ ERROR ] Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 8: Resource file '..\tests\Lab004_Paramaterization.robot' does not exist.

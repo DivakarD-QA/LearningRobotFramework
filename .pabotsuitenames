@@ -1,0 +1,7 @@
+datasources:aa0bf518c0b2f650bd3edffeadade5a92ba3ed00
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:799d37fdf8909dd30236971fa22f99c26c1bc542
+--test Lab006 CustomKeyword.Validate the successfully login and verify the shop page
+--test Lab006 CustomKeyword.Validate invalid Login
+--test Lab006 CustomKeyword.Validate the login page with all options

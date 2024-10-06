@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-06T08:13:45.720604" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab006 CustomKeyword" source="C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\tests\Lab006_CustomKeyword.robot">
+<test id="s1-t1" name="Validate invalid Login" line="80">
+<kw name="Open the Browser and URL" owner="Generic" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:46.114232" level="INFO">Opening browser 'edge' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>${URL}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-06T08:13:46.113218" elapsed="4.507257"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-06T08:13:50.620475" elapsed="0.148428"/>
+</kw>
+<arg>edge</arg>
+<status status="PASS" start="2024-10-06T08:13:46.111778" elapsed="4.658184"/>
+</kw>
+<kw name="Fill the login Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:50.771935" level="INFO">Typing text 'rahulshettyacademy' into text field 'id=username'.</msg>
+<arg>${UserNameField}</arg>
+<arg>${UserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:50.771424" elapsed="0.373504"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:51.146475" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-10-06T08:13:51.300943" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PasswordField}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:51.145939" elapsed="0.319433"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:51.467405" level="INFO">Clicking element 'id=signInBtn'.</msg>
+<arg>${SignInBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:51.465372" elapsed="0.124082"/>
+</kw>
+<arg>${ValidUserName}</arg>
+<arg>${InvalidPassword}</arg>
+<status status="PASS" start="2024-10-06T08:13:50.769962" elapsed="0.820873"/>
+</kw>
+<kw name="Wait until the element is located in the screen">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-06T08:13:51.592111" elapsed="2.041343"/>
+</kw>
+<arg>${InvalidMsg}</arg>
+<status status="PASS" start="2024-10-06T08:13:51.590835" elapsed="2.042619"/>
+</kw>
+<kw name="Verify the error message shown for invalid credentials">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:53.677438" level="INFO">${InvalidCredMsg} = Incorrect username/password.</msg>
+<var>${InvalidCredMsg}</var>
+<arg>${InvalidMsg}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:53.635007" elapsed="0.042431"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${InvalidCredMsg}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-10-06T08:13:53.677438" elapsed="0.001328"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:53.679434" level="INFO">Verifying element 'css=.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
+<arg>${InvalidMsg}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-06T08:13:53.679434" elapsed="0.030958"/>
+</kw>
+<status status="PASS" start="2024-10-06T08:13:53.633454" elapsed="0.076938"/>
+</kw>
+<status status="PASS" start="2024-10-06T08:13:46.110602" elapsed="7.599790"/>
+</test>
+<status status="PASS" start="2024-10-06T08:13:45.754579" elapsed="7.957340"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Lab006 CustomKeyword">Lab006 CustomKeyword</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-06T08:13:46.087878" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 5: Resource file '..\tests\Lab005_CSV.robot' does not exist.</msg>
+<msg time="2024-10-06T08:13:46.088987" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 6: Resource file '..\tests\Lab002_FOR.robot' does not exist.</msg>
+<msg time="2024-10-06T08:13:46.090006" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 7: Resource file '..\tests\Lab003_Window_Split.robot' does not exist.</msg>
+<msg time="2024-10-06T08:13:46.090006" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 8: Resource file '..\tests\Lab004_Paramaterization.robot' does not exist.</msg>
+</errors>
+</robot>

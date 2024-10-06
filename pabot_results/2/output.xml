@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-06T08:13:45.714120" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab006 CustomKeyword" source="C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\tests\Lab006_CustomKeyword.robot">
+<test id="s1-t1" name="Validate the login page with all options" line="95">
+<kw name="Open the Browser and URL" owner="Generic" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:46.118301" level="INFO">Opening browser 'edge' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>${URL}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-06T08:13:46.117291" elapsed="3.471936"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-06T08:13:49.590230" elapsed="0.176207"/>
+</kw>
+<arg>edge</arg>
+<status status="PASS" start="2024-10-06T08:13:46.115612" elapsed="3.650825"/>
+</kw>
+<kw name="Enter Username and Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:49.768663" level="INFO">Typing text 'rahulshettyacademy' into text field 'id=username'.</msg>
+<arg>${UserNameField}</arg>
+<arg>${UserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:49.767645" elapsed="0.593207"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:50.361864" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-10-06T08:13:50.447586" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PasswordField}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:50.361864" elapsed="0.190919"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:50.552783" level="INFO">Clicking element 'xpath=//*[@value="user"]'.</msg>
+<arg>xpath=//*[@value="user"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:50.552783" elapsed="0.217179"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>okayBtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-06T08:13:50.769962" elapsed="0.513827"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:51.285820" level="INFO">Clicking button 'okayBtn'.</msg>
+<arg>okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:51.285307" elapsed="0.224539"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:51.511362" level="INFO">Selecting options from selection list '//select[@class="form-control"]' by value teach.</msg>
+<arg>//select[@class="form-control"]</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-10-06T08:13:51.509846" elapsed="0.238284"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:51.749130" level="INFO">Selecting checkbox 'terms'.</msg>
+<arg>terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:51.748130" elapsed="0.168434"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:51.918705" level="INFO">Verifying checkbox 'terms' is selected.</msg>
+<arg>terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-10-06T08:13:51.917190" elapsed="0.085802"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:52.003597" level="INFO">Unselecting checkbox 'terms'.</msg>
+<arg>terms</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T08:13:52.002992" elapsed="0.368030"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-10-06T08:13:52.372119" level="INFO">Verifying checkbox 'terms' is not selected.</msg>
+<arg>terms</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-10-06T08:13:52.371576" elapsed="0.083334"/>
+</kw>
+<arg>${ValidUserName}</arg>
+<arg>${ValidPassword}</arg>
+<status status="PASS" start="2024-10-06T08:13:49.766437" elapsed="2.688473"/>
+</kw>
+<status status="PASS" start="2024-10-06T08:13:46.114232" elapsed="6.340678"/>
+</test>
+<status status="PASS" start="2024-10-06T08:13:45.752023" elapsed="6.703908"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Lab006 CustomKeyword">Lab006 CustomKeyword</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-06T08:13:46.087878" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 5: Resource file '..\tests\Lab005_CSV.robot' does not exist.</msg>
+<msg time="2024-10-06T08:13:46.090006" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 6: Resource file '..\tests\Lab002_FOR.robot' does not exist.</msg>
+<msg time="2024-10-06T08:13:46.090006" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 7: Resource file '..\tests\Lab003_Window_Split.robot' does not exist.</msg>
+<msg time="2024-10-06T08:13:46.092130" level="ERROR">Error in file 'C:\Users\DIVAKAR D\PycharmProjects\LearningRobotFramework\Resources\GenericLib\Generic.robot' on line 8: Resource file '..\tests\Lab004_Paramaterization.robot' does not exist.</msg>
+</errors>
+</robot>
